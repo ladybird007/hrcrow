@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDCROW - My Account</title>
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header js-header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+
+      <div class="main-nav js-menu">
+        <div class="main-nav__list js-menu-list">
+          <a href="search.html">Search</a>
+          <a href="pricing.html">Pricing</a>
+          <div class="mobile-invisible">
+            <div class="language">
+              <div class="language__name js-language-btn"><img src="img/flags/us.svg" alt="" class="language__flag">En</div>
+              <ul class="language__list js-language">
+                <li><a href="/change_languege/ua/"><img src="img/flags/ua.svg" alt="" class="language__flag">Ua</a></li>
+                <li><a href="/change_language/en/"><img src="img/flags/us.svg" alt="" class="language__flag">En</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-user">
+            <div class="header-user__btn js-user-btn">
+              <span class="header-user__name">mymail@gmail.com</span>
+              <span>5 credits left</span>
+            </div>
+            <ul class="header-user__dropdown js-user-menu">
+              <li><a href="my-account.html">My account</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mobile-visible">
+        <div class="language">
+          <div class="language__name js-language-btn"><img src="img/flags/us.svg" alt="" class="language__flag">En</div>
+          <ul class="language__list js-language">
+            <li><a href="/change_languege/ua/"><img src="img/flags/ua.svg" alt="" class="language__flag">Ua</a></li>
+            <li><a href="/change_language/en/"><img src="img/flags/us.svg" alt="" class="language__flag">En</a></li>
+          </ul>
+        </div>
+        <div class="menu-btn js-menu-btn">
+          <em></em>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <div class="my-account">
+        <h1 class="small">My account</h1>
+  
+        <form action="#" class="my-account__row">
+          <div>
+            <h4>Email</h4>
+            <div class="my-account__col">
+              <input type="text" value="mymail@gmail.com" readonly>
+              <button class="text-icon-btn"><img src="img/icons/edit.svg" alt=""> Change</button>
+            </div>
+          </div>
+          <div>
+            <h4>Password</h4>
+            <div class="my-account__col">
+              <input type="password" placeholder="**************" readonly autocomplete="on">
+              <button class="text-icon-btn"><img src="img/icons/edit.svg" alt=""> Change</button>
+            </div>
+          </div>
+        </form>
+  
+        <h4>Current plan</h4>
+        <div class="my-account__row">
+          <div class="my-account__row my-account__row--plan">
+            <span class="text-label">Free</span>
+            <ul>
+              <li>15 credits in a week</li>
+              <li>Text</li>
+              <li>Text</li>
+              <li>Text</li>
+            </ul>
+          </div>
+          <div>
+            <a href="#" class="btn btn--white-blue btn--change-plan">Change plan</a>
+          </div>
+        </div>
+
+        <div class="my-account__credits">
+          <h4 class="small">Credits left</h4>
+          <div>
+            <span class="text-label">55</span>
+            <div class="blue-line"></div>
+            <div class="my-account__row text-grey">
+              <span>Reniews</span> 
+              <span>21.01.2024</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="small">Statistics</h2>
+
+        <div class="my-account__row">
+          <div>
+            <h4>Opened this month</h4>
+            <div class="my-account__row">
+              <span class="text-label">55</span>
+              <button class="text-icon-btn"><img src="img/icons/view.svg" alt=""> View</button>
+            </div>
+          </div>
+          <div>
+            <h4>Opened total</h4>
+            <div class="my-account__row">
+              <span class="text-label">55</span>
+              <button class="text-icon-btn"><img src="img/icons/view.svg" alt=""> View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- .content ---->
+
+<script src="js/script.js"></script>
+</body>
+</html>

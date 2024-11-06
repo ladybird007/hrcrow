@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDCROW - Search</title>
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header js-header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+
+      <div class="main-nav js-menu">
+        <div class="main-nav__list js-menu-list">
+          <a href="search.html">Search</a>
+          <a href="#">Opened contacts</a>
+          <a href="pricing.html">Pricing</a>
+          <div class="mobile-invisible">
+            <div class="language">
+              <div class="language__name js-language-btn"><img src="img/flags/us.svg" alt="" class="language__flag">En</div>
+              <ul class="language__list js-language">
+                <li><a href="/change_languege/ua/"><img src="img/flags/ua.svg" alt="" class="language__flag">Ua</a></li>
+                <li><a href="/change_language/en/"><img src="img/flags/us.svg" alt="" class="language__flag">En</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-user">
+            <div class="header-user__btn js-user-btn">
+              <span class="header-user__name">mymail@gmail.com</span>
+              <span>5 credits left</span>
+            </div>
+            <ul class="header-user__dropdown js-user-menu">
+              <li><a href="my-account.html">My account</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mobile-visible">
+        <div class="language">
+          <div class="language__name js-language-btn"><img src="img/flags/us.svg" alt="" class="language__flag">En</div>
+          <ul class="language__list js-language">
+            <li><a href="/change_languege/ua/"><img src="img/flags/ua.svg" alt="" class="language__flag">Ua</a></li>
+            <li><a href="/change_language/en/"><img src="img/flags/us.svg" alt="" class="language__flag">En</a></li>
+          </ul>
+        </div>
+        <div class="menu-btn js-menu-btn">
+          <em></em>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="search">
+    <div class="search__sidebar">
+      <div class="filters">
+        <label>Language</label>
+        <select name="language" id="language">
+          <option value="-1">Select language</option>
+          <option value="1">UA</option>
+          <option value="2">EN</option>
+        </select>
+
+        <label>Location</label>
+        <select name="country" id="country">
+          <option value="-1">Select country</option>
+        </select>
+        <select name="city" id="city">
+          <option value="-1">Select city</option>
+        </select>
+
+        <div class="additional-filters">
+          <div class="justify-flex-end">
+            <span class="text-icon-btn js-more-filters-btn opened">
+              <img src="img/icons/arrow-down.svg" alt="">
+              <span class="additional-filters__text-btn js-more-filters-text">Less</span>
+            </span>
+          </div>
+  
+          <div class="js-more-filters opened">
+            <div class="js-more-filter-height">
+              <label>The number of followers is not less than</label>
+              <select name="number-followers" id="number-followers">
+                <option value="-1">Selct number of followers</option>
+              </select>
+    
+              <label>The number of stars is not less than</label>
+              <select name="number-starts" id="number-starts">
+                <option value="-1">Select number of stars</option>
+              </select>
+              <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="custom-checkbox__icon"></span>
+                <span>Only with additional links</span>
+              </label>
+    
+              <label>Date of registration no later than</label>
+              <select name="date" id="date">
+                <option value="-1">Select date please</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <input type="submit" value="Search" class="btn btn--blue-white">
+      </div>
+    </div>
+    <div class="search__results">
+      <div class="search-card">
+        <div class="search-card__row  search-card__row--justify-between search-card__row--align-start">
+          <div class="search-card__row">
+            <div class="search-card__label">
+              <div class="avatar">
+                <img src="img/icons/Profile-Avatar.svg" alt="">
+              </div>
+            </div>
+            <div class="search-card__result">
+              <p class="text-semibold">Guy Hawkins</p>
+              <p class="text-dark-grey">Ukraine, Kyiv, Founder and CEO at Human Workplace</p>
+            </div>
+          </div>
+
+          <div class="search-card__row search-card__row--counters">
+            <div>
+              <img src="img/icons/star.svg" alt="">
+              255
+            </div>
+            <div>
+              <img src="img/icons/users.svg" alt="">
+              222
+            </div>
+            <div>
+              <img src="img/icons/certificate.svg" alt="">
+              10
+            </div>
+          </div>
+
+          <div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Created
+              </div>
+              <div class="search-card__result">
+                12/01/2024
+              </div>
+            </div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Updated
+              </div>
+              <div class="search-card__result">
+                12/01/2024
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="btn btn--grey-white">Open contact</span>
+          </div>
+        </div>
+
+        <div class="search-card__row search-card__row--justify-between  search-card__row--align-start">
+          <div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Username
+              </div>
+              <div class="search-card__result">
+                <span>hawa</span>
+              </div>
+            </div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Public@
+              </div>
+              <div class="search-card__result search-card__result--in-row">
+                <img src="img/icons/send.svg" alt=""> <span>mymail@gmail.com</span>
+              </div>
+            </div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Commit@
+              </div>
+              <div class="search-card__result search-card__result--in-row">
+                <img src="img/icons/send.svg" alt=""> <span>mymail@company.com</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="search-card__row search-card__row--socials">
+              <a href="#" ><img src="img/icons/facebook.svg" alt=""></a>
+              <a href="#"><img src="img/icons/linkedin.svg" alt=""></a>
+              <a href="#"><img src="img/icons/tvitter.svg" alt=""></a>
+            </div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Opened 
+              </div>
+              <div class="search-card__result">
+                24/10/2024
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-card__row">
+          <div class="search-card__label">
+            Links
+          </div>
+          <div class="search-card__result search-card__result--in-row search-card__result--links">
+            <a href="#">bs11.jp</a>
+            <a href="#">mxtv.co.jp</a>
+            <a href="#">nikkei.com</a>
+            <a href="#">kyodonews.jp</a>
+          </div>
+        </div>
+        <div class="search-card__row search-card__row--align-start">
+          <div class="search-card__label">
+            BIO
+          </div>
+          <div class="search-card__result search-card__result--text">
+            We are building the platform, which supports various information 
+            gathering and processing across the bank. The PMC application, 
+            Price Master Central (PMC) is a global reference data management 
+            application - responsible for sourcing securities/Pricing data 
+            from market vendors and internal sources and providing it to 
+            downstream clients after applying client specific rule. <a href="#" class="js-more-text">More</a>
+          </div>
+        </div>
+        <div class="search-card__row">
+          <div class="search-card__label">
+            Language
+          </div>
+          <div class="search-card__result search-card__result--in-row search-card__result--language">
+            <div class="search-card__tag">Java <span>5%</span></div>
+            <div class="search-card__tag">PHP <span>5%</span></div>
+            <div class="search-card__tag">Ruby <span>5%</span></div>
+            <div class="search-card__tag">Python <span>5%</span></div>
+          </div>
+        </div>
+        <div class="search-card__row">
+          <div class="search-card__label">
+            Frameworks
+          </div>
+          <div class="search-card__result search-card__result--in-row">
+            <div class="search-card__tag">Django</div>
+            <div class="search-card__tag">Flask</div>
+            <div class="search-card__tag">FastAPI</div>
+            <div class="search-card__tag">requests</div>
+            <div class="search-card__tag">asyncio</div>
+            <div class="search-card__tag">2 - Qt</div>
+            <div class="search-card__tag">c++13</div>
+            <div class="search-card__tag">c++17</div>
+          </div>
+        </div>
+        <div class="search-card__row">
+          <div class="search-card__label">
+            Tools
+          </div>
+          <div class="search-card__result search-card__result--in-row">
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-card">
+        <div class="search-card__row  search-card__row--justify-between search-card__row--align-start">
+          <div class="search-card__row">
+            <div class="search-card__label">
+              <div class="search-card__avatar">
+                <img src="img/icons/Profile-Avatar.svg" alt="">
+              </div>
+            </div>
+            <div class="search-card__result">
+              <p class="text-semibold">Guy Hawkins</p>
+              <p class="text-dark-grey">Ukraine, Kyiv, Founder and CEO at Human Workplace</p>
+            </div>
+          </div>
+
+          <div class="search-card__row search-card__row--counters">
+            <div>
+              <img src="img/icons/star.svg" alt="">
+              255
+            </div>
+            <div>
+              <img src="img/icons/users.svg" alt="">
+              222
+            </div>
+            <div>
+              <img src="img/icons/certificate.svg" alt="">
+              10
+            </div>
+          </div>
+
+          <div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Created
+              </div>
+              <div class="search-card__result">
+                12/01/2024
+              </div>
+            </div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Updated
+              </div>
+              <div class="search-card__result">
+                12/01/2024
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="#" class="btn btn--blue-white">Open contact</a>
+          </div>
+        </div>
+
+        <div class="search-card__row search-card__row--justify-between  search-card__row--align-start">
+          <div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Username
+              </div>
+              <div class="search-card__result">
+                <span class="blured">hawa</span>
+              </div>
+            </div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Public@
+              </div>
+              <div class="search-card__result search-card__result--in-row">
+                <img src="img/icons/send.svg" alt=""> <span class="blured">mymail@gmail.com</span>
+              </div>
+            </div>
+            <div class="search-card__row">
+              <div class="search-card__label">
+                Commit@
+              </div>
+              <div class="search-card__result search-card__result--in-row">
+                <img src="img/icons/send.svg" alt=""> <span class="blured">mymail@company.com</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="search-card__row search-card__row--socials">
+              <span><img src="img/icons/facebook.svg" alt=""></span>
+              <span><img src="img/icons/linkedin.svg" alt=""></span>
+              <span><img src="img/icons/tvitter.svg" alt=""></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-card__row">
+          <div class="search-card__label">
+            Links
+          </div>
+          <div class="search-card__result search-card__result--in-row search-card__result--links blured">
+            <a href="#">bs11.jp</a>
+            <a href="#">mxtv.co.jp</a>
+            <a href="#">nikkei.com</a>
+            <a href="#">kyodonews.jp</a>
+          </div>
+        </div>
+        <div class="search-card__row search-card__row--align-start">
+          <div class="search-card__label">
+            BIO
+          </div>
+          <div class="search-card__result search-card__result--text">
+            We are building the platform, which supports various information 
+            gathering and processing across the bank. The PMC application, 
+            Price Master Central (PMC) is a global reference data management 
+            application - responsible for sourcing securities/Pricing data 
+            from market vendors and internal sources and providing it to 
+            downstream clients after applying client specific rule. <a href="#" class="js-more-text">More</a>
+          </div>
+        </div>
+        <div class="search-card__row">
+          <div class="search-card__label">
+            Language
+          </div>
+          <div class="search-card__result search-card__result--in-row search-card__result--language">
+            <div class="search-card__tag">Java <span>5%</span></div>
+            <div class="search-card__tag">PHP <span>5%</span></div>
+            <div class="search-card__tag">Ruby <span>5%</span></div>
+            <div class="search-card__tag">Python <span>5%</span></div>
+          </div>
+        </div>
+        <div class="search-card__row">
+          <div class="search-card__label">
+            Frameworks
+          </div>
+          <div class="search-card__result search-card__result--in-row">
+            <div class="search-card__tag">Django</div>
+            <div class="search-card__tag">Flask</div>
+            <div class="search-card__tag">FastAPI</div>
+            <div class="search-card__tag">requests</div>
+            <div class="search-card__tag">asyncio</div>
+            <div class="search-card__tag">2 - Qt</div>
+            <div class="search-card__tag">c++13</div>
+            <div class="search-card__tag">c++17</div>
+          </div>
+        </div>
+        <div class="search-card__row">
+          <div class="search-card__label">
+            Tools
+          </div>
+          <div class="search-card__result search-card__result--in-row">
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+            <div class="search-card__tag">text</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-pagination">
+        <ul>
+          <li>
+            <a href="#" class="search-pagination__first"><img src="img/icons/arrow-slider.svg" alt=""></a>
+          </li>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">...</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <span class="search-pagination__active">3</span>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#">...</a>
+          </li>
+          <li>
+            <a href="#">9</a>
+          </li>
+          <li>
+            <a href="#" class="search-pagination__last"><img src="img/icons/arrow-slider.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- .search -->
+
+  <script src="js/script.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

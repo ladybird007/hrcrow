@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDCROW - Login</title>
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header js-header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+
+      <div class="main-nav js-menu">
+        <div class="main-nav__list js-menu-list">
+          <a href="search.html">Search</a>
+          <a href="pricing.html">Pricing</a>
+          <div class="mobile-invisible">
+            <div class="language">
+              <div class="language__name js-language-btn"><img src="img/flags/us.svg" alt="" class="language__flag">En</div>
+              <ul class="language__list js-language">
+                <li><a href="/change_languege/ua/"><img src="img/flags/ua.svg" alt="" class="language__flag">Ua</a></li>
+                <li><a href="/change_language/en/"><img src="img/flags/us.svg" alt="" class="language__flag">En</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="login.html">Login</a>
+          <a href="signup.html" class="btn btn--blue-white">Signup</a>
+        </div>
+      </div>
+
+
+      <div class="mobile-visible">
+        <div class="language">
+          <div class="language__name js-language-btn"><img src="img/flags/us.svg" alt="" class="language__flag">En</div>
+          <ul class="language__list js-language">
+            <li><a href="/change_languege/ua/"><img src="img/flags/ua.svg" alt="" class="language__flag">Ua</a></li>
+            <li><a href="/change_language/en/"><img src="img/flags/us.svg" alt="" class="language__flag">En</a></li>
+          </ul>
+        </div>
+        <div class="menu-btn js-menu-btn">
+          <em></em>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="full-height-section">
+      <div class="card login">
+        <img class="logo" src="img/logo.svg" alt="">
+        <h4 class="text-bold">Log in</h4>
+        <p>Welcome back</p>
+        <a href="#" class="btn btn--google">Login with Google</a>
+        <p class="login__or">or</p>
+        <form action="#" class="custom-form">
+          <div class="custom-form__row">
+            <input type="text" placeholder="login">
+          </div>
+          <div class="custom-form__row">
+            <input type="password" class="js-password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" autocomplete="on">
+            <span class="custom-form__eye js-password-eye"></span>
+          </div>
+          <label class="custom-form__row custom-form__row--checkbox  text-light-grey">
+            <input type="checkbox"> Remember me
+          </label>
+          <div class="custom-form__row">
+            <button class="btn btn--blue-white">Log in</button>
+          </div>
+        </form>
+        <div class="login__bottom">
+          <p>No account yet? <a href="signup.html">Sing up</a></p>
+          <div class="blue-line"></div>
+          <p><a href="#">Forgot your password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div><!-- .content ---->
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HDCROW</title>
+  <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header class="header js-header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+
+      <div class="main-nav js-menu">
+        <div class="main-nav__list js-menu-list">
+          <a href="search.html">Search</a>
+          <a href="pricing.html">Pricing</a>
+          <div class="mobile-invisible">
+            <div class="language">
+              <div class="language__name js-language-btn"><img src="img/flags/us.svg" alt="" class="language__flag">En</div>
+              <ul class="language__list js-language">
+                <li><a href="/change_languege/ua/"><img src="img/flags/ua.svg" alt="" class="language__flag">Ua</a></li>
+                <li><a href="/change_language/en/"><img src="img/flags/us.svg" alt="" class="language__flag">En</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="login.html">Login</a>
+          <a href="signup.html" class="btn btn--blue-white">Signup</a>
+        </div>
+      </div>
+
+
+      <div class="mobile-visible">
+        <div class="language">
+          <div class="language__name js-language-btn"><img src="img/flags/us.svg" alt="" class="language__flag">En</div>
+          <ul class="language__list js-language">
+            <li><a href="/change_languege/ua/"><img src="img/flags/ua.svg" alt="" class="language__flag">Ua</a></li>
+            <li><a href="/change_language/en/"><img src="img/flags/us.svg" alt="" class="language__flag">En</a></li>
+          </ul>
+        </div>
+        <div class="menu-btn js-menu-btn">
+          <em></em>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <div class="main-section">
+        <div class="text-center">
+          <h1>Find Top Talent from the GitHub User Database</h1>
+          <p class="text-dark-grey text-medium">
+            Platform that offers direct access to the entire GitHub user database, ensuring you find the right candidate.
+          </p>
+          <a href="#" class="btn btn--blue-white btn--free">Try for free</a>
+          <p class="note"> *No credit card required</p>
+        </div>
+
+        <div class="cards">
+          <div class="cards__item">
+            <div class="cards__img">
+              <img src="img/cards/github-profiles.svg" class="cards__github" alt="">
+            </div>
+            <div class="cards__title">
+              <span>GitHub profiles</span>
+              <img src="img/icons/arrow-right.svg" alt="">
+            </div>
+          </div>
+          <div class="cards__item">
+            <div class="cards__img">
+              <img src="img/cards/analize.svg" alt="">
+            </div>
+            <div class="cards__title">
+              <span>Analize</span>
+              <img src="img/icons/arrow-right.svg" alt="">
+            </div>
+          </div>
+          <div class="cards__item">
+            <div class="cards__img">
+              <img src="img/cards/best-candidate.svg" alt="">
+            </div>
+            <div class="cards__title">
+              Best candidate
+            </div>
+          </div>
+        </div>
+      </div><!-- .main-section -->
+
+      <div class="choose-us">
+        <h3>Why Choose Us</h3>
+
+        <div class="choose-us__steps">
+          <div class="row choose-us__row">
+            <div class="choose-us__number">1</div>
+            <div class="choose-us__text">
+              <div>
+                <h4>Complete Access:</h4>
+                <p class="text-dark-grey">
+                  Explore the entire GitHub user database, not just indexed profiles.
+                </p>
+              </div>
+            </div>
+            <div class="choose-us__img">
+              <img src="img/choose-us/card1.png" class="choose-us__card1" alt="">
+            </div>
+          </div>
+  
+          <div class="row choose-us__row choose-us__row--links">
+            <a href="#" class="choose-us__link">
+              Google boolean search
+            </a>
+            <div class="choose-us__line-wrap">
+              <div class="choose-us__line"></div>
+            </div>
+            <a href="#" class="choose-us__link choose-us__link--reverse">
+              Github user database
+            </a>
+          </div>
+  
+          <div class="row choose-us__row choose-us__row--reverse">
+            <div class="choose-us__number">2</div>
+            <div class="choose-us__text choose-us__text--database">
+              <div>
+                <h4>Code Analysis:</h4>
+                <p class="text-dark-grey">
+                  Automatically discover the tools and frameworks candidates use in their projects.
+                </p>
+              </div>
+            </div>
+            <div class="choose-us__img choose-us__img--bg choose-us__img--database">
+              <img src="img/choose-us/for-card2.png" class="choose-us__database" alt="">
+              <img src="img/choose-us/for-card2-ellipce.png" class="choose-us__ellipce" alt="">
+            </div>
+          </div>
+  
+          <div class="row choose-us__row">
+            <div class="choose-us__number">3</div>
+            <div class="choose-us__text">
+              <div>
+                <h4>Email Extraction:</h4>
+                <p class="text-dark-grey">
+                  Gain access to hidden email addresses, making outreach easier and faster. 
+                </p>
+              </div>
+            </div>
+            <div class="choose-us__img">
+              <img src="img/choose-us/card3.png" class="choose-us__card3" alt="">
+            </div>
+          </div>
+  
+          <div class="row choose-us__row choose-us__row--reverse">
+            <div class="choose-us__number">4</div>
+            <div class="choose-us__text choose-us__text--hirring">
+              <div>
+                <h4>Effortless Hiring:</h4>
+                <p class="text-dark-grey">
+                  Simplify your recruitment process with detailed insights into real-world coding skills. 
+                </p>
+              </div>
+            </div>
+            <div class="choose-us__img choose-us__img--bg choose-us__img--hirring">
+              <img src="img/choose-us/for-card4.png" class="choose-us__hirring" alt="">
+            </div>
+          </div>
+        </div><!-- .choose-us__steps -->
+
+        <div class="text-center">
+          <h2>
+            Your next hire is just <br> a search away!
+          </h2>
+          <h5>Discover top talent today.</h5>
+  
+          <a href="#" class="btn btn--blue-white btn--free">Try for free</a>
+          <p class="note"> *No credit card required</p>
+        </div>
+      </div><!-- .choose-us  -->
+
+      <div class="how-it-works">
+        <h3>How it works</h3>
+        
+        <div class="how-it-works__card">
+          <div class="row how-it-works__row">
+            <img src="img/how-it-works/tired.png" class="how-it-works__tired" alt="">
+            <h4>
+              Tired of sifting through partial results with boolean or X-ray searches? 
+            </h4>
+          </div>
+          <div class="row how-it-works__row">
+            <img src="img/how-it-works/happy.png" class="how-it-works__happy" alt="">
+            <h4>
+              Our platform offers direct access to the entire GitHub user database, 
+              ensuring you find the right candidate without missing hidden talent.
+            </h4>
+          </div>
+          <p class="text-medium">
+            Unlike traditional search methods like Google, which only give you 
+            a fraction of the results, we provide access to complete GitHub profiles. 
+            Whether you're looking for developers, engineers, or tech specialists, 
+            our platform connects you to the most comprehensive pool of candidates available.
+          </p>
+        </div>
+
+        <p class="text-medium">
+          Not only do we provide access to GitHub profiles, but our 
+          platform also performs in-depth code analysis. We extract the tools, 
+          languages, and frameworks used in candidates' projects, giving you 
+          valuable insights into their actual technical expertise.
+        </p>
+      </div><!-- .how-it-works -->
+
+      <div class="testimonials-section">
+        <div class="row row--testimonials">
+          <h3>What clients say about our  platform</h3>
+          <div class="testimonials-controls">
+            <span class="testimonials-controls__paging js-status"></span>
+          </div>
+        </div>
+        
+        <div class="testimonials js-carousel">
+          
+          <div>
+            <div class="testimonials__card">
+              <div class="testimonials__text">
+                I've had the pleasure of using this HR service for the past several months, 
+                and it has truly exceeded my expectations. The platform is user-friendly, 
+                allowing us to streamline our recruitment processes efficiently. 
+              </div>
+              <div class="testimonials__author">
+                <div class="testimonials__photo">
+                  <img src="img/testimonials/Alex.png" alt="">
+                </div>
+                <div>
+                  <p><strong>Alex Alex</strong></p>
+                  <p>HR My company, Germany</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonials__card">
+              <div class="testimonials__text">
+                The integration with other HR tools is seamless, 
+                saving us a significant amount of time on administrative tasks.
+              </div>
+              <div class="testimonials__author">
+                <div class="testimonials__photo">
+                  <img src="img/testimonials/Nina.png" alt="">
+                </div>
+                <div>
+                  <p><strong>Nina</strong></p>
+                  <p>HR Qcompany, USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonials__card">
+              <div class="testimonials__text">
+                The reporting tools are excellent, and the customizable 
+                scorecards help in maintaining consistency in interviews.
+              </div>
+              <div class="testimonials__author">
+                <div class="testimonials__photo">
+                  <img src="img/testimonials/Leslie.png" alt="">
+                </div>
+                <div>
+                  <p><strong>Leslie Alexander</strong></p>
+                  <p>HR Qcompany, USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonials__card">
+              <div class="testimonials__text">
+                From posting job listings to tracking applicants, 
+                everything is centralized and easy to navigate.
+              </div>
+              <div class="testimonials__author">
+                <div class="testimonials__photo">
+                  <img src="img/testimonials/Dianne.png" alt="">
+                </div>
+                <div>
+                  <p><strong>Dianne Russell</strong></p>
+                  <p>HR Qcompany, USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonials__card">
+              <div class="testimonials__text">
+                HRCrow offers a very intuitive and user-friendly interface 
+                that makes navigating through different hiring stages a breeze.
+              </div>
+              <div class="testimonials__author">
+                <div class="testimonials__photo">
+                  <img src="img/testimonials/Countney.png" alt="">
+                </div>
+                <div>
+                  <p><strong>Courtney Henry</strong></p>
+                  <p>HR Qcompany, USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+        </div><!-- .testimonials -->
+
+        <div class="text-center">
+          <a href="#" class="btn btn--blue-white btn--free">Try for free</a>
+          <p class="note"> *No credit card required</p>
+        </div>
+      </div><!-- .testimonials-section -->
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__links">
+        <div class="footer__links-item">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Our Data</a></li>
+            <li><a href="">Feature request</a></li>
+            <li><a href="">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-item">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Do not sell my info</a></li>
+          </ul>
+        </div>
+        <div class="footer__links-item">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@info.com ">info@info.com </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        ©2024.All rights reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
